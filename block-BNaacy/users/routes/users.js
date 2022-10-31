@@ -3,9 +3,18 @@ var router=express.Router();
 
 // 
 router.get('/',(req,res)=>{
-  res.render('newUsers')
+  res.send('users page')
+})
+router.get('/new',(req,res)=>{
+  res.render('newusers')
+
 })
 
-router.post('/',(req,res)=>{
-  console.log(req.body);
-})
+// router.post('/',(req,res)=>{
+//   // console.log(req.body);
+//   res.send(req.body);
+// })
+
+
+// 
+module.exports=router;
