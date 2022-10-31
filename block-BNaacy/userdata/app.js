@@ -3,9 +3,11 @@ var mongoose=require('mongoose')
 var logger=require('morgan')
 var path=require('path')
 
+// var User=require('../models/user')
 
 
-mongoose.connect("mongodb://localhost:27017/users",(err)=>{
+
+mongoose.connect("mongodb://localhost:27017/userdata",(err)=>{
   console.log( err ? err: "connected true")
 })
 
